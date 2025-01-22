@@ -1,4 +1,9 @@
 const { app, BrowserWindow, screen, ipcMain, globalShortcut } = require('electron');
+
+// https://www.electronforge.io/config/makers/squirrel.windows
+// run this as early in the main process as possible
+if (require('electron-squirrel-startup')) app.quit();
+
 const commandLineArgs = require('command-line-args');
 const settings = require('electron-settings');
 
@@ -27,7 +32,7 @@ const createWindow = (showSettings) => {
 
     // Get settings for screen
     let screenConfig = settings.getSync('screen-' + primaryDisplay.id);
-    if (screenConfig == null || screenConfig.url == null || options.settings == true || showSettings) {
+    if (screenConfig == null || screenConfig.url == null || screenConfig.url == "" || options.settings == true || showSettings) {
         // Show settings
         mainWindow = new BrowserWindow({
             //width: options.width,
