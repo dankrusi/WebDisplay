@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Security-Policy"
+          content="script-src 'self'" />
+    <meta http-equiv="X-Content-Security-Policy"
+          content="script-src 'self'" />
+    <title>Web Display</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Overpass:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <style>
+        * {
+            font-family: "Inter", serif;
+            font-optical-sizing: auto;
+        }
+        .settings {
+            display: table;
+        }
+            .settings .field {
+                display: table-row;
+            }
+                .settings .field label {
+                    display: table-cell;
+                    padding-right: 1em;
+                    padding-top: 0.5em;
+                    padding-bottom: 0.5em;
+                }
+            .settings .field input {
+                display: table-cell;
+            }
+    </style>
+</head>
+<body>
+
+    <h1>Display Settings</h1>
+
+    <div class="settings">
+        <div class="field">
+            <label>Screen ID</label>
+            <input id="displayId" type="text" disabled />
+        </div>
+        <div class="field">
+            <label>URL</label>
+            <input id="url" type="text" />
+        </div>
+        <div class="field">
+            <label>Fullscreen</label>
+            <input id="fullscreen" type="checkbox" />
+        </div>
+        <div class="field">
+            <label>Chrome Version</label>
+            <input id="chromeVersion" type="text" disabled />
+        </div>
+    </div>
+    <button id="save">Save</button>
+    <button id="saveRestart">Save &amp; Restart</button>
+    <button id="saveLaunch">Save &amp; Launch</button>
+
+
+    <script src="./settings.js"></script>
+</body>
+</html>
