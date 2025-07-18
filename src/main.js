@@ -73,7 +73,7 @@ function createSplashWindow() {
         frame: false
     });
 
-    splashWindow.loadFile('splash.html');
+    splashWindow.loadFile('./src/splash.html');
 
 }
 
@@ -190,7 +190,7 @@ const createSettingsWindow = () => {
             enableRemoteModule: false, // 
         },
     });
-    settingsWindow.loadFile('settings.html');
+    settingsWindow.loadFile('./src/settings.html');
     
 
 

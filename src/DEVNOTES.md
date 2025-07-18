@@ -24,6 +24,9 @@ https://www.electronjs.org/docs/latest/api/power-save-blocker
 https://www.electron.build/
 https://github.com/marketplace/actions/electron-builder-action
 
+Boiler plate: https://github.com/szwacz/electron-boilerplate/blob/master/package.json
+Sample app: https://github.com/samuelmeuli/mini-diary/blob/master/package.json
+
 ## Releasing
 
 Releasing

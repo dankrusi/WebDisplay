@@ -2,8 +2,9 @@
 .DS_Store
 Thumbs.db
 *.log
-/Source/dist
-/Source/temp
+/dist
+/temp
+.vs
 
 # Logs
 logs

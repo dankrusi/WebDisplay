@@ -2,9 +2,9 @@
     "name": "webdisplay",
     "version": "0.0.1",
     "description": "A free and lightweight web view powered by Chrome browser for easy and hassle free fullscreen website display or kiosk mode",
-    "main": "main.js",
+    "main": "./src/main.js",
     "scripts": {
-        "start": "electron-forge start",
+        "start": "electron .",
         "test": "echo \"Error: no test specified\" && exit 1",
         "package": "electron-forge package",
         "make": "electron-forge make",
