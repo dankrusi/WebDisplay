@@ -2,6 +2,8 @@ let timeLeft = 5;
 const countdown = document.getElementById('countdown');
 const button = document.getElementById('settingsButton');
 
+countdown.textContent = timeLeft;
+
 const interval = setInterval(() => {
     timeLeft -= 1;
     countdown.textContent = timeLeft;

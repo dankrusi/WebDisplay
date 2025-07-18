@@ -1,0 +1,44 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+body,html {
+    height: 100%;
+    margin: 0;
+}
+body {
+    padding: 12px;
+    box-sizing: border-box;
+}
+
+
+
+.settings-ui {
+    user-select: none;
+
+}
+.settings-ui .settings {
+    display: table;
+}
+.settings-ui .settings .field {
+    display: table-row;
+}
+.settings-ui .settings .field label {
+    display: table-cell;
+    padding-right: 1em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+}
+.settings-ui .settings .field input {
+    display: table-cell;
+}
+
+
+
+.splash-ui {
+    user-select: none;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
