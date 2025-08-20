@@ -29,9 +29,12 @@ console.log("cmd options", options);
 
 function getCurrentDisplay() {
     // Get the current display based on the mouse pointer
-    const primaryDisplay = screen.getDisplayNearestPoint(screen.getCursorScreenPoint());
-    console.log("primaryDisplay", primaryDisplay);
-    return primaryDisplay; //TODO
+    //const primaryDisplay = screen.getDisplayNearestPoint(screen.getCursorScreenPoint());
+    //console.log("primaryDisplay", primaryDisplay);
+    //return primaryDisplay; //TODO
+
+    // Return the primary display
+    return screen.getPrimaryDisplay();
 }
 
 function saveScreenConfig(config) {
