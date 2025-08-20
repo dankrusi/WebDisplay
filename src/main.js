@@ -36,17 +36,21 @@ function getCurrentDisplay() {
     // Return the primary display
     return screen.getPrimaryDisplay();
 }
+function getScreenId(screen) {
+    //return screen.id; // Return the ID of the screen
+    return "na";
+}
 
 function saveScreenConfig(config) {
-    config.displayId = getCurrentDisplay().id; // Add display ID to the settings
-    settings.setSync('screen-' + getCurrentDisplay().id, config);
+    config.displayId = getScreenId(getCurrentDisplay()); // Add display ID to the settings
+    settings.setSync('screen-' + getScreenId(getCurrentDisplay()), config);
 
 
 }
 
 function getScreenConfig() {
     // Get settings for screen
-    let screenConfig = settings.getSync('screen-' + getCurrentDisplay().id);
+    let screenConfig = settings.getSync('screen-' + getScreenId(getCurrentDisplay()));
     return screenConfig;
 }
 
