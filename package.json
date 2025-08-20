@@ -4,7 +4,7 @@
     "description": "A free and lightweight web view powered by Chrome browser for easy and hassle free fullscreen website display or kiosk mode",
     "main": "./src/main.js",
     "scripts": {
-        "start": "electron ./src",
+        "start": "electron .",
         "test": "echo \"Error: no test specified\" && exit 1",
         "package": "electron-forge package",
         "make": "electron-builder",
@@ -31,7 +31,7 @@
         "@electron-forge/plugin-auto-unpack-natives": "^7.6.0",
         "@electron-forge/plugin-fuses": "^7.6.0",
         "@electron/fuses": "^1.8.0",
-        "electron": "^34.0.0"
+        "electron": "^37.0.0"
     },
     "dependencies": {
         "command-line-args": "^6.0.1",
